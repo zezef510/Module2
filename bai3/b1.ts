@@ -1,27 +1,30 @@
-class QuadraticEquation{
-    private readonly a :  number
-    private readonly b :  number
-    private readonly c :  number
-    constructor(a: number,b : number,c : number) {
-        this.a = a
-        this.b = b
-        this.c = c
+class QuadraticEquation {
+     a: number;
+     b: number;
+     c: number;
+
+    constructor(a: number, b: number, c: number) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
-    getA(): number{
-        return  this.a
+    getAa(): number {
+        return this.a;
     }
+
     getB(): number {
-        return  this.b
+        return this.b;
     }
-    getC() : number{
-        return  this.c
+
+    getC(): number {
+        return this.c;
     }
-    getDiscriminant(): number{
-        return this.b **2 - 4 * this.a *this.c;
+    getDiscriminant(): number {
+        return this.b ** 2 - 4 * this.a * this.c;
     }
 }
 // @ts-ignore
-const readline =require('readline-sync');
+const readline = require('readline-sync');
 
 const a = parseFloat(readline.question("Enter a: "));
 const b = parseFloat(readline.question("Enter b: "));

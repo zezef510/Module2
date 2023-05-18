@@ -66,7 +66,7 @@ const employee3 = new Employee(
 addEmployee(employee3);
 
 // Xóa một nhân viên trong mảng
-deleteEmployee(0); // Xóa nhân viên đầu tiên trong mảng
+deleteEmployee(0);
 
 // Hiển thị lại danh sách mới
 console.log("Updated list of employees:");

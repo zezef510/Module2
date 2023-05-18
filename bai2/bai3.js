@@ -29,7 +29,7 @@ displayEmployee(employee2);
 var employee3 = new Employee("Trần Văn C", "Nam", new Date("1998-12-31"), "employee3@gmail.com");
 addEmployee(employee3);
 // Xóa một nhân viên trong mảng
-deleteEmployee(0); // Xóa nhân viên đầu tiên trong mảng
+deleteEmployee(0);
 // Hiển thị lại danh sách mới
 console.log("Updated list of employees:");
 employees.forEach(function (employee) {
