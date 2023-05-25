@@ -1,3 +1,8 @@
+
+// @ts-ignore
+let readlineSync = require('readline-sync');
+
+
 class Product { // class pojo: biểu dien du lieu
     id: string;
     name: string;
@@ -10,6 +15,10 @@ class Product { // class pojo: biểu dien du lieu
         this.price = price;
         this.amount = amount;
     }
+    getI4(){
+        console.log('Name: '+this.name+', id: '+this.id);
+    }
+
 }
 
 class ManageProduct { // class Manage: quản lý
@@ -50,21 +59,27 @@ class ManageProduct { // class Manage: quản lý
     show() {
         console.table(this.listProduct)
     }
+
 }
+let name111 = readlineSync.question('Nhập vào tên đi: ');
+let id2 = readlineSync.question('Nhập vào id đi: ');
 
-let mp = new ManageProduct();
-mp.add(new Product('1', 'IP', 1000, 10));
-mp.add(new Product('2', 'SS', 2000, 50));
-mp.show();
+let a = new Product(name111,id2,2,5)
+    a.getI4()
 
-mp.edit('2', new Product('3', 'SS', 2000, 50));
-mp.show();
-mp.delete('1')
-mp.show();
-mp.timKiemSPA(`1`)
-mp.show();
-mp.demSP(1000)
-mp.show();
-mp.timKiemCoAKo(`A`)
-mp.show();
+// mp.add(new Product('1', 'IP', 1000, 10));
+// mp.add(new Product('2', 'SS', 2000, 50));
+// mp.show();
+
+// mp.edit('2', new Product('3', 'SS', 2000, 50));
+// mp.show();
+// mp.delete('1')
+// mp.show();
+// mp.timKiemSPA(`1`)
+// mp.show();
+// mp.demSP(1000)
+// mp.show();
+// mp.timKiemCoAKo(`A`)
+// mp.show();
+
 

@@ -8,6 +8,7 @@ class Product {
     }
 }
 
+
 class ProductManager {
     private listProduct: Product[] = [];
 

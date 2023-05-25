@@ -28,7 +28,7 @@ class NhanVien extends  CanBo{
 }
 class CongNhan  extends  CanBo{
     bac : number
-    constructor(name:string,tuoi:number,gioiTinh :`nam` | `nu` | `khac`, diaChi: any , bac : number) {
+    constructor(name:string, tuoi:number,gioiTinh :`nam` | `nu` | `khac`, diaChi: any , bac : number) {
         super(name,tuoi,gioiTinh,diaChi);
         this.bac = bac
     }

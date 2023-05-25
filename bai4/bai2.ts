@@ -74,6 +74,7 @@ class Employee{
      }
 
 }
+let ad = new EmployeeManager()
 EmployeeManager.add(new Employee('John', 'Doe', 1990, '123 Main St', 'Software Engineer'));
 EmployeeManager.add(new Employee('Zoe', 'jin', 1991, '456 Main St', 'Rot Lezngin'));
 EmployeeManager.add(new Employee('Zoe1', 'jin1', 1992, '789 Main St', 'Rot Lezngin1'));

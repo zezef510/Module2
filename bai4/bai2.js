@@ -79,11 +79,11 @@ var EmployeeManager = /** @class */ (function () {
     EmployeeManager.employess1 = [];
     return EmployeeManager;
 }());
+var ad = new EmployeeManager();
 EmployeeManager.add(new Employee('John', 'Doe', 1990, '123 Main St', 'Software Engineer'));
 EmployeeManager.add(new Employee('Zoe', 'jin', 1991, '456 Main St', 'Rot Lezngin'));
 EmployeeManager.add(new Employee('Zoe1', 'jin1', 1992, '789 Main St', 'Rot Lezngin1'));
 EmployeeManager.add(new Employee('Zoe2', 'jin2', 1993, '890 Main St', 'Rot Lezngin2'));
-EmployeeManager.add(new Employee('Zoe1', 'jin2', 1994, '5959 Main St', 'Rot Lezngin3'));
 console.table(EmployeeManager.show());
 var employeeToUpdate = EmployeeManager.chiTiet(0);
 if (employeeToUpdate) {

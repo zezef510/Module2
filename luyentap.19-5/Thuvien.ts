@@ -51,7 +51,7 @@
 
      static delete(code: string) {
          for ( let i = 0 ; i < this.list.length ; i++){
-             if (code === code) {
+             if (this.list[i].documentCode === code) {
                  this.list.splice(Number(code), 1);
              }
              else {
